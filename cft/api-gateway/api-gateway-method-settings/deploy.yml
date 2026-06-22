@@ -21,5 +21,5 @@ Resources:
           DataTraceEnabled: false
         - ResourcePath: /stack
           HttpMethod: GET
-          MetricsEnabled: true
+          MetricsEnabled: false
           DataTraceEnabled: false
