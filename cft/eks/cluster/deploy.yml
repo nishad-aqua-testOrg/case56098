@@ -13,7 +13,7 @@ Resources:
           - sg1
           - sg2
         EndpointPrivateAccess: true
-        EndpointPublicAccess: true
+        EndpointPublicAccess: false
       Logging:
         ClusterLogging:
           EnabledTypes:
