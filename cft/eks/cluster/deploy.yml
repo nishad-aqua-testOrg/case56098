@@ -12,7 +12,7 @@ Resources:
         SecurityGroupIds:
           - sg1
           - sg2
-        EndpointPrivateAccess: false
+        EndpointPrivateAccess: true
         EndpointPublicAccess: true
       Logging:
         ClusterLogging:
