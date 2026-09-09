@@ -3,11 +3,14 @@ name: CI
 
 on:
   pull_request:
-  push:
     branches:
       - main
-      - release/**
       - 56098
+  # push:
+  #   branches:
+  #     - main
+  #     - release/**
+  #     - 56098
   workflow_dispatch:
 
 jobs:
@@ -52,6 +55,7 @@ jobs:
           TRIVY_PASSWORD: ${{ secrets.AQUASEC_REGISTRY_PASSWORD }}
           AQUA_URL: https://api.eu-1.supply-chain.cloud.aquasec.com
           CSPM_URL: https://eu-1.api.cloudsploit.com 
+          AQUA_PRESERVE_RESOLVED_COMMENTS: true
       # - name: Generate SBOM Locally
       #   id: generate-sbom-local
       #   run: |
